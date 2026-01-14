@@ -68,7 +68,7 @@ const Header = ({ whatsappLink }: { whatsappLink: string }) => (
   <header className="sticky top-0 z-40 w-full bg-header backdrop-blur-sm">
     <div className="container mx-auto flex items-center justify-between px-4 h-20 md:px-6">
       <Link href="/">
-        <Image src="https://raw.githubusercontent.com/LPMarketing/Danillo/4ea2ba50e4dbc4b60cd459ceef6a63e7a9c8eb14/Design%20sem%20nome%20(4).png" alt="Peixoto & Rocha Advocacia" width={200} height={40} className="object-contain" />
+        <Image src="https://raw.githubusercontent.com/LPMarketing/Danillo/53188001e953fbd31e5ccc724c319cf3364c63bd/Design%20sem%20nome%20(5).png" alt="Peixoto & Rocha Advocacia" width={200} height={40} className="object-contain" />
       </Link>
       <Button asChild>
         <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">Falar com Especialista</Link>
