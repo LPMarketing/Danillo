@@ -66,7 +66,7 @@ export default function Home() {
 
 const Header = ({ whatsappLink }: { whatsappLink: string }) => (
   <header className="sticky top-0 z-40 w-full bg-header backdrop-blur-sm">
-    <div className="container mx-auto flex items-center justify-between px-4 h-20 md:px-6">
+    <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
       <Link href="/">
         <Image src="https://raw.githubusercontent.com/LPMarketing/Danillo/53188001e953fbd31e5ccc724c319cf3364c63bd/Design%20sem%20nome%20(5).png" alt="Peixoto & Rocha Advocacia" width={200} height={40} className="object-contain" />
       </Link>
@@ -97,7 +97,7 @@ const HeroSection = ({ heroImage, whatsappLink }: { heroImage: any; whatsappLink
       <p className="mt-4 max-w-[700px] text-lg md:text-xl text-neutral-200">
         Voo cancelado, atraso superior a 4h, overbooking ou bagagem extraviada? Resolvemos seu caso com agilidade, ética e sem burocracia.
       </p>
-      <Button asChild size="lg" className="mt-8 bg-accent hover:bg-accent/90 text-accent-foreground text-lg font-bold px-10 py-6 animate-pulse">
+      <Button asChild size="lg" className="mt-8 bg-[#25D366] hover:bg-[#128C7E] text-white text-lg font-bold px-10 py-6 animate-pulse">
         <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
           QUERO ANALISAR MEU CASO AGORA
         </Link>
@@ -127,7 +127,7 @@ const ProblemsSection = ({ problemCards, whatsappLink }: { problemCards: any[]; 
         ))}
       </div>
       <div className="flex justify-center mt-12">
-        <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-lg px-10 py-6">
+        <Button asChild size="lg" className="bg-[#25D366] hover:bg-[#128C7E] text-white font-bold text-lg px-10 py-6">
           <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">PASSEI POR ISSO E QUERO AJUDA</Link>
         </Button>
       </div>
