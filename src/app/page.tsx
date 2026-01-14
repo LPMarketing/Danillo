@@ -66,7 +66,7 @@ export default function Home() {
 
 const Header = ({ whatsappLink }: { whatsappLink: string }) => (
   <header className="sticky top-0 z-40 w-full bg-header backdrop-blur-sm">
-    <div className="container mx-auto flex items-center justify-between px-4 md:px-6 py-3">
+    <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
       <Link href="/" className="flex items-center">
         <Image src="https://raw.githubusercontent.com/LPMarketing/Danillo/4ea2ba50e4dbc4b60cd459ceef6a63e7a9c8eb14/Design%20sem%20nome%20(4).png" alt="Peixoto & Rocha Advocacia" width={200} height={40} className="object-contain" />
       </Link>
