@@ -50,7 +50,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div>
       <Header whatsappLink={whatsappLink} />
       <main>
         <HeroSection heroImage={heroImage} whatsappLink={whatsappLink} />
@@ -66,7 +66,7 @@ export default function Home() {
 
 const Header = ({ whatsappLink }: { whatsappLink: string }) => (
   <header className="sticky top-0 z-40 w-full bg-header/80 backdrop-blur-sm">
-    <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
+    <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
       <Link href="/" className="flex items-center">
         <Image src="https://raw.githubusercontent.com/LPMarketing/Danillo/c9325a628dec86fd7ad70b69133a874d1a9b0fae/%40gdanillocrpeixoto.adv.png" alt="Peixoto & Rocha Advocacia" width={200} height={40} className="object-contain" />
       </Link>
@@ -78,7 +78,7 @@ const Header = ({ whatsappLink }: { whatsappLink: string }) => (
 );
 
 const HeroSection = ({ heroImage, whatsappLink }: { heroImage: any; whatsappLink: string }) => (
-  <section className="relative h-[calc(100vh-4rem)] min-h-[500px] w-full flex items-center justify-center text-center text-white">
+  <section className="relative h-[calc(100vh-5rem)] min-h-[500px] w-full flex items-center justify-center text-center text-white">
     {heroImage && (
       <Image
         src={heroImage.imageUrl}
