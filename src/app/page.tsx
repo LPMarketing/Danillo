@@ -202,7 +202,7 @@ const FloatingWhatsAppButton = ({ whatsappLink }: { whatsappLink: string }) => (
   <div className="fixed bottom-6 right-6 z-50">
     <Button asChild size="icon" className="rounded-full w-16 h-16 bg-[#25D366] hover:bg-[#128C7E] shadow-lg transition-transform hover:scale-110">
       <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
-        <Icons.whatsapp className="w-8 h-8 text-white" />
+        <Icons.whatsappSolid className="w-8 h-8 text-white" />
         <span className="sr-only">Falar pelo WhatsApp</span>
       </Link>
     </Button>
