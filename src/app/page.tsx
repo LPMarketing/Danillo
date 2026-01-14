@@ -67,7 +67,7 @@ export default function Home() {
 const Header = ({ whatsappLink }: { whatsappLink: string }) => (
   <header className="sticky top-0 z-40 w-full bg-header backdrop-blur-sm">
     <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-      <Link href="/" className="flex items-center justify-center">
+      <Link href="/">
         <Image src="https://raw.githubusercontent.com/LPMarketing/Danillo/53188001e953fbd31e5ccc724c319cf3364c63bd/Design%20sem%20nome%20(5).png" alt="Peixoto & Rocha Advocacia" width={200} height={50} className="object-contain" />
       </Link>
       <Button asChild className="bg-[#25D366] hover:bg-[#128C7E] text-white">
@@ -202,7 +202,7 @@ const FloatingWhatsAppButton = ({ whatsappLink }: { whatsappLink: string }) => (
   <div className="fixed bottom-6 right-6 z-50">
     <Button asChild size="icon" className="rounded-full w-20 h-20 bg-[#25D366] hover:bg-[#128C7E] shadow-lg transition-transform hover:scale-110 flex items-center justify-center">
       <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
-        <Icons.whatsappSolid className="w-10 h-10 text-white" />
+        <Icons.whatsappSolid className="w-12 h-12 text-white" />
         <span className="sr-only">Falar pelo WhatsApp</span>
       </Link>
     </Button>
