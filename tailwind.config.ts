@@ -66,7 +66,7 @@ export default {
           ring: 'hsl(var(--sidebar-ring))',
         },
         header: {
-          DEFAULT: '#b8860b',
+          DEFAULT: '#1A1A1A',
         },
       },
       borderRadius: {
