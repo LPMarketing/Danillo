@@ -50,9 +50,9 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-[100dvh]">
+    <div className="min-h-screen">
       <Header whatsappLink={whatsappLink} />
-      <main className="flex-1">
+      <main>
         <HeroSection heroImage={heroImage} whatsappLink={whatsappLink} />
         <ProblemsSection problemCards={problemCards} whatsappLink={whatsappLink} />
         <WhyUsSection differentiators={differentiators} />
@@ -110,7 +110,7 @@ const HeroSection = ({ heroImage, whatsappLink }: { heroImage: any; whatsappLink
 
 const ProblemsSection = ({ problemCards, whatsappLink }: { problemCards: any[]; whatsappLink: string }) => (
   <section id="problemas" className="w-full py-12 md:py-24 lg:py-32 bg-card">
-    <div className="container px-4 md:px-6">
+    <div className="container mx-auto px-4 md:px-6">
       <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center">
         Identifique o seu problema:
       </h2>
@@ -138,7 +138,7 @@ const ProblemsSection = ({ problemCards, whatsappLink }: { problemCards: any[]; 
 
 const WhyUsSection = ({ differentiators }: { differentiators: any[] }) => (
   <section id="diferenciais" className="w-full py-12 md:py-24 lg:py-32 bg-background">
-    <div className="container px-4 md:px-6">
+    <div className="container mx-auto px-4 md:px-6">
       <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center">
         Por que escolher a Peixoto & Rocha?
       </h2>
