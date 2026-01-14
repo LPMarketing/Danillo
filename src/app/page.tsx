@@ -68,7 +68,7 @@ const Header = ({ whatsappLink }: { whatsappLink: string }) => (
   <header className="sticky top-0 z-40 w-full bg-header backdrop-blur-sm">
     <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
       <Link href="/" className="flex items-center justify-center">
-        <Image src="https://raw.githubusercontent.com/LPMarketing/Danillo/53188001e953fbd31e5ccc724c319cf3364c63bd/Design%20sem%20nome%20(5).png" alt="Peixoto & Rocha Advocacia" width={200} height={40} className="object-contain" />
+        <Image src="https://raw.githubusercontent.com/LPMarketing/Danillo/53188001e953fbd31e5ccc724c319cf3364c63bd/Design%20sem%20nome%20(5).png" alt="Peixoto & Rocha Advocacia" width={200} height={50} className="object-contain" />
       </Link>
       <Button asChild className="bg-[#25D366] hover:bg-[#128C7E] text-white">
         <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">Falar com Especialista</Link>
@@ -187,7 +187,7 @@ const SpecialistSection = ({ specialistImage, whatsappLink }: { specialistImage:
 );
 
 const Footer = () => (
-  <footer className="bg-primary text-primary-foreground py-6">
+  <footer className="bg-header text-primary-foreground py-6">
     <div className="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between text-center md:text-left">
       <p className="text-sm">Peixoto & Rocha Advocacia - Todos os direitos reservados.</p>
       <div className="flex gap-4 mt-4 md:mt-0 text-sm">
