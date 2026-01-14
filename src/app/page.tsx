@@ -50,7 +50,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="flex flex-col min-h-[100dvh]">
+    <div className="flex flex-col min-h-[100dvh] mx-auto">
       <Header whatsappLink={whatsappLink} />
       <main className="flex-1">
         <HeroSection heroImage={heroImage} whatsappLink={whatsappLink} />
