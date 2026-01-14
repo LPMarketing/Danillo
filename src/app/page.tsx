@@ -9,7 +9,7 @@ import { Icons } from '@/components/icons';
 export default function Home() {
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-background');
   const specialistImage = PlaceHolderImages.find(p => p.id === 'specialist-photo');
-  const whatsappLink = "https://wa.me/5511999999999?text=Ol%C3%A1%2C%20tive%20um%20problema%20com%20meu%20voo%20e%20gostaria%20de%20analisar%20meu%20caso.";
+  const whatsappLink = "https://wa.link/0bpqz1";
 
   const problemCards = [
     {
