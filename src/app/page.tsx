@@ -15,7 +15,7 @@ export default function Home() {
     {
       icon: <Plane className="w-10 h-10 text-accent" />,
       title: 'Voo Cancelado',
-      description: 'Cancelamento sem aviso prévio ou reacomodação inadequada? Você tem direitos.',
+      description: 'Você teve seu voo cancelado sem aviso prévio ou obteve uma reacomodação inadequada ? Você pode ter direito a indenização. Procure um especialista no direito aéreo para entender seu caso.',
     },
     {
       icon: <Clock className="w-10 h-10 text-accent" />,
@@ -202,7 +202,7 @@ const FloatingWhatsAppButton = ({ whatsappLink }: { whatsappLink: string }) => (
   <div className="fixed bottom-6 right-6 z-50">
     <Button asChild size="icon" className="rounded-full w-20 h-20 bg-[#25D366] hover:bg-[#128C7E] shadow-lg transition-transform hover:scale-110 flex items-center justify-center p-0 overflow-hidden animate-pulse">
       <Link href={whatsappLink} target="_blank" rel="noopener noreferrer" className="w-full h-full flex items-center justify-center">
-        <Image src="https://raw.githubusercontent.com/LPMarketing/Danillo/7330b4262f40425131f7639db272be3ee2ae2a84/Design%20sem%20nome%20(7).png" alt="Falar pelo WhatsApp" width={80} height={80} className="object-cover" />
+        <Icons.whatsappSolid className="w-12 h-12 text-white" />
         <span className="sr-only">Falar pelo WhatsApp</span>
       </Link>
     </Button>
