@@ -166,7 +166,7 @@ const SpecialistSection = ({ specialistImage, whatsappLink }: { specialistImage:
             alt={specialistImage.description}
             width={400}
             height={400}
-            className="rounded-full object-cover aspect-square shadow-2xl"
+            className="rounded-full object-cover object-top aspect-square shadow-2xl"
             data-ai-hint={specialistImage.imageHint}
           />
         )}
