@@ -37,7 +37,7 @@ export default function Home() {
   const differentiators = [
     {
       title: 'Atendimento Individualizado',
-      description: 'Não somos robôs. Aqui seu caso é tratado com atenção exclusiva pelo Dr. Danillo Campos.',
+      description: 'Não somos robôs. Em nosso escritório o seu caso será tratado de maneira individual e o atendimento realizado de forma exclusiva pelo Dr. Danillo Peixoto. Avaliamos a viabilidade do seu processo com total ética e profissionalismo',
     },
     {
       title: 'Retorno Rápido',
@@ -200,9 +200,9 @@ const Footer = () => (
 
 const FloatingWhatsAppButton = ({ whatsappLink }: { whatsappLink: string }) => (
   <div className="fixed bottom-6 right-6 z-50">
-    <Button asChild size="icon" className="rounded-full w-20 h-20 bg-[#25D366] hover:bg-[#128C7E] shadow-lg transition-transform hover:scale-110 flex items-center justify-center p-0 overflow-hidden animate-pulse">
+    <Button asChild size="icon" className="rounded-full w-20 h-20 bg-transparent hover:bg-transparent shadow-lg transition-transform hover:scale-110 flex items-center justify-center p-0 overflow-hidden animate-pulse">
       <Link href={whatsappLink} target="_blank" rel="noopener noreferrer" className="w-full h-full flex items-center justify-center">
-         <Image src="https://raw.githubusercontent.com/LPMarketing/Danillo/7330b4262f40425131f7639db272be3ee2ae2a84/Design%20sem%20nome%20(7).png" alt="WhatsApp" width={48} height={48} />
+         <Image src="https://raw.githubusercontent.com/LPMarketing/Danillo/7330b4262f40425131f7639db272be3ee2ae2a84/Design%20sem%20nome%20(7).png" alt="WhatsApp" width={80} height={80} />
         <span className="sr-only">Falar pelo WhatsApp</span>
       </Link>
     </Button>
