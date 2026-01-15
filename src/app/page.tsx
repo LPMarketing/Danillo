@@ -127,7 +127,7 @@ const ProblemsSection = ({ problemCards, whatsappLink }: { problemCards: any[]; 
         ))}
       </div>
       <div className="flex justify-center mt-12">
-        <Button asChild size="lg" className="bg-[#25D366] hover:bg-[#128C7E] text-white font-bold text-lg px-10 py-6">
+        <Button asChild size="lg" className="bg-[#25D366] hover:bg-[#128C7E] text-white font-bold text-lg px-10 py-6 h-auto whitespace-normal text-center">
           <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">PASSEI POR TRANSTORNOS AÉREOS E PRECISO DE AJUDA JURÍDICA</Link>
         </Button>
       </div>
@@ -213,9 +213,11 @@ const FloatingWhatsAppButton = ({ whatsappLink }: { whatsappLink: string }) => (
           src="https://raw.githubusercontent.com/LPMarketing/Danillo/2af3f2617bbaaa08c0ba1385d2741c3455dfa761/Design%20sem%20nome%20(7).png"
           alt="Falar pelo WhatsApp"
           fill
-          className="object-contain"
+          className="object-contain p-2"
         />
         <span className="sr-only">Falar pelo WhatsApp</span>
     </Link>
   </div>
 );
+
+    
