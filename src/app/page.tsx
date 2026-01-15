@@ -15,12 +15,12 @@ export default function Home() {
     {
       icon: <Plane className="w-10 h-10 text-accent" />,
       title: 'Voo Cancelado',
-      description: 'Você teve seu voo cancelado sem aviso prévio ou obteve uma reacomodação inadequada ? Você pode ter direito a indenização. Procure um especialista no direito aéreo para entender seu caso.',
+      description: 'Você teve seu voo cancelado sem aviso prévio ou obteve uma reacomodação inadequada ? Você pode ter direito a indenização.Procure um especialista no direito aéreo para entender seu caso.',
     },
     {
       icon: <Clock className="w-10 h-10 text-accent" />,
       title: 'Atraso de Voo',
-      description: 'Seu voo atrasou por mais de 4 horas?Saiba que você poderá ter direito a uma indenização em dinheiro.',
+      description: 'Seu voo atrasou por mais de 4 horas? Saiba que você poderá ter direito a uma indenização em dinheiro.',
     },
     {
       icon: <Briefcase className="w-10 h-10 text-accent" />,
