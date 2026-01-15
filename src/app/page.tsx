@@ -208,11 +208,14 @@ const Footer = () => (
 
 const FloatingWhatsAppButton = ({ whatsappLink }: { whatsappLink: string }) => (
   <div className="fixed bottom-6 right-6 z-50">
-    <Button asChild size="icon" className="rounded-full w-20 h-20 bg-[#25D366] hover:bg-[#128C7E] text-white shadow-lg transition-transform hover:scale-110 animate-pulse">
-      <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
-         <Icons.whatsappSolid className="w-12 h-12" />
+    <Link href={whatsappLink} target="_blank" rel="noopener noreferrer" className="relative block w-20 h-20 rounded-full shadow-lg transition-transform hover:scale-110 animate-pulse bg-transparent">
+        <Image 
+          src="https://raw.githubusercontent.com/LPMarketing/Danillo/2af3f2617bbaaa08c0ba1385d2741c3455dfa761/Design%20sem%20nome%20(7).png"
+          alt="Falar pelo WhatsApp"
+          fill
+          className="object-contain"
+        />
         <span className="sr-only">Falar pelo WhatsApp</span>
-      </Link>
-    </Button>
+    </Link>
   </div>
 );
