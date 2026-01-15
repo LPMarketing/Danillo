@@ -20,7 +20,7 @@ export default function Home() {
     {
       icon: <Clock className="w-10 h-10 text-accent" />,
       title: 'Atraso de Voo',
-      description: 'Chegou ao destino com mais de 4 horas de atraso? O tempo perdido gera indenização.',
+      description: 'Seu voo atrasou por mais de 4 horas?Saiba que você poderá ter direito a uma indenização em dinheiro.',
     },
     {
       icon: <Briefcase className="w-10 h-10 text-accent" />,
@@ -202,7 +202,7 @@ const FloatingWhatsAppButton = ({ whatsappLink }: { whatsappLink: string }) => (
   <div className="fixed bottom-6 right-6 z-50">
     <Button asChild size="icon" className="rounded-full w-20 h-20 bg-[#25D366] hover:bg-[#128C7E] shadow-lg transition-transform hover:scale-110 flex items-center justify-center p-0 overflow-hidden animate-pulse">
       <Link href={whatsappLink} target="_blank" rel="noopener noreferrer" className="w-full h-full flex items-center justify-center">
-        <Icons.whatsappSolid className="w-12 h-12 text-white" />
+         <Image src="https://raw.githubusercontent.com/LPMarketing/Danillo/7330b4262f40425131f7639db272be3ee2ae2a84/Design%20sem%20nome%20(7).png" alt="WhatsApp" width={48} height={48} />
         <span className="sr-only">Falar pelo WhatsApp</span>
       </Link>
     </Button>
