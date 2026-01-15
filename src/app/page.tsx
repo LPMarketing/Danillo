@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Briefcase, CheckCircle2, Clock, UserX, XCircle } from 'lucide-react';
+import { Briefcase, CheckCircle2, Clock, Plane, UserX, XCircle } from 'lucide-react';
 import { Icons } from '@/components/icons';
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
 
   const problemCards = [
     {
-      icon: <XCircle className="w-10 h-10 text-accent" />,
+      icon: <Plane className="w-10 h-10 text-accent" />,
       title: 'Voo Cancelado',
       description: 'Cancelamento sem aviso prévio ou reacomodação inadequada? Você tem direitos.',
     },
@@ -116,7 +116,7 @@ const ProblemsSection = ({ problemCards, whatsappLink }: { problemCards: any[]; 
       <div className="mx-auto grid grid-cols-1 gap-8 mt-12 sm:grid-cols-2 lg:grid-cols-4 max-w-5xl">
         {problemCards.map((card, index) => (
           <Card key={index} className="flex flex-col items-center text-center p-6 border-2 hover:border-primary transition-all duration-300 hover:shadow-xl">
-            <CardHeader className="p-0">
+            <CardHeader className="p-0 flex flex-col items-center">
               {card.icon}
               <CardTitle className="mt-4">{card.title}</CardTitle>
             </CardHeader>
