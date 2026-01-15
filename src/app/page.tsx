@@ -175,9 +175,17 @@ const SpecialistSection = ({ specialistImage, whatsappLink }: { specialistImage:
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
           Quem lutará pelos seus direitos
         </h2>
-        <p className="max-w-[600px] text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed mx-auto lg:mx-0">
-          A Peixoto & Rocha Advocacia e Assessoria Jurídica, liderada pelo Dr. Danillo Campos Rocha Peixoto, é especializada em defender passageiros aéreos. Nosso foco é garantir que o desrespeito das companhias aéreas não fique impune. Combinamos a credibilidade jurídica com um atendimento jovem, eficiente e acessível.
-        </p>
+        <div className="max-w-[600px] text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed mx-auto lg:mx-0 space-y-4">
+          <p>
+            A Peixoto & Rocha Advocacia e Assessoria Jurídica, liderada pelo Dr. Danillo Campos Rocha Peixoto, é especializada em defender passageiros aéreos que obtiveram transtornos em suas viagens.
+          </p>
+          <p>
+            Nosso foco é garantir que o desrespeito das companhias aéreas não fique impune e você seja devidamente indenizado por todos os transtornos obtidos.
+          </p>
+          <p>
+            Combinamos a credibilidade jurídica com um atendimento personalizado, eficiente e acessível a fim de garantir maior segurança e qualidade para nossos clientes.
+          </p>
+        </div>
         <Button asChild size="lg" className="bg-[#25D366] hover:bg-[#128C7E] text-white font-bold text-lg px-10 py-6">
           <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">FALAR COM O ADVOGADO</Link>
         </Button>
