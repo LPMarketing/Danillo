@@ -128,7 +128,7 @@ const ProblemsSection = ({ problemCards, whatsappLink }: { problemCards: any[]; 
       </div>
       <div className="flex justify-center mt-12">
         <Button asChild size="lg" className="bg-[#25D366] hover:bg-[#128C7E] text-white font-bold text-lg px-10 py-6">
-          <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">PASSEI POR ISSO E QUERO AJUDA</Link>
+          <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">PASSEI POR TRANSTORNOS AÉREOS E PRECISO DE AJUDA JURÍDICA</Link>
         </Button>
       </div>
     </div>
