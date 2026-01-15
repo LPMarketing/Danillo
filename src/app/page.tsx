@@ -30,7 +30,7 @@ export default function Home() {
     {
       icon: <UserX className="w-10 h-10 text-accent" />,
       title: 'Overbooking',
-      description: 'Foi impedido de embarcar por falta de lugar? A falha da companhia aérea é grave.',
+      description: 'Foi impedido de embarcar por falta de lugares disponíveis na aeronave? A falha da companhia aérea é grave e você deve ser indenizado.',
     },
   ];
 
