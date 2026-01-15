@@ -159,14 +159,14 @@ const WhyUsSection = ({ differentiators }: { differentiators: any[] }) => (
 const SpecialistSection = ({ specialistImage, whatsappLink }: { specialistImage: any; whatsappLink: string }) => (
   <section id="especialista" className="w-full py-12 md:py-24 lg:py-32 bg-card">
     <div className="container grid items-center justify-center gap-10 px-4 md:px-6 lg:grid-cols-2 lg:gap-16">
-      <div className="flex justify-center">
+      <div className="flex justify-center overflow-hidden rounded-full w-[400px] h-[400px]">
         {specialistImage && (
           <Image
             src={specialistImage.imageUrl}
             alt={specialistImage.description}
             width={400}
             height={400}
-            className="rounded-full object-cover object-top aspect-square shadow-2xl"
+            className="rounded-full object-cover object-top aspect-square shadow-2xl transform scale-110"
             data-ai-hint={specialistImage.imageHint}
           />
         )}
