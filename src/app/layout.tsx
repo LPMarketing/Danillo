@@ -1,3 +1,4 @@
+import Script from 'next/script'
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
@@ -20,6 +21,23 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased">
+        
+        {/* --- INÍCIO DA TAG DO GOOGLE ADS --- */}
+        <Script 
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17672723091" 
+          strategy="afterInteractive" 
+        />
+        <Script id="google-ads-tag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'AW-17672723091');
+          `}
+        </Script>
+        {/* --- FIM DA TAG DO GOOGLE ADS --- */}
+
         {children}
         <Toaster />
       </body>
