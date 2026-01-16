@@ -1,5 +1,5 @@
 import Script from 'next/script'
-import type {Metadata} from 'next';
+import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
@@ -22,21 +22,28 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased">
         
-        {/* --- INÍCIO DA TAG DO GOOGLE ADS --- */}
-        <Script 
-          src="https://www.googletagmanager.com/gtag/js?id=AW-17672723091" 
-          strategy="afterInteractive" 
-        />
-        <Script id="google-ads-tag" strategy="afterInteractive">
+        {/* --- INÍCIO DO GTM (Parte do Script) --- */}
+        <Script id="google-tag-manager" strategy="afterInteractive">
           {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'AW-17672723091');
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-PTWT5878');
           `}
         </Script>
-        {/* --- FIM DA TAG DO GOOGLE ADS --- */}
+        {/* --- FIM DO GTM --- */}
+
+        {/* --- INÍCIO DO GTM (Parte do NoScript - Para navegadores sem JS) --- */}
+        <noscript>
+          <iframe 
+            src="https://www.googletagmanager.com/ns.html?id=GTM-PTWT5878"
+            height="0" 
+            width="0" 
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
+        {/* --- FIM DO NOSCRIPT --- */}
 
         {children}
         <Toaster />
